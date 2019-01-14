@@ -17,7 +17,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "./lighthouseAll100s/index.html",
   "display": "standalone",
   "theme_color": "#edf1f3",
   "background_color": "#edf1f3"

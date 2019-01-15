@@ -4,7 +4,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox
 workbox.precaching.precacheAndRoute([
     '/styles/index.css',
     '/static/img/headshot_dithered_transparent.png',
-    { url: '/lighthouseAll100s/index.html'},
+    { url: '/index.html'},
 ]);
 
 // Offline analytics, because why not.

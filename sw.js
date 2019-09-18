@@ -7,9 +7,6 @@ workbox.precaching.precacheAndRoute([
     { url: '/index.html'},
 ]);
 
-// Offline analytics, because why not.
-workbox.googleAnalytics.initialize();
-
 workbox.routing.registerRoute(
     // Cache that JS
     /.*\.js/,

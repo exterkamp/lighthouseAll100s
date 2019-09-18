@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124170035-1"></script>
         <!-- Some structured data about Person: Shane Exterkamp -->
         <script type="application/ld+json">
         {
@@ -30,64 +28,135 @@
         <meta name="Description" content="The homepage of Shane Exterkamp.">
         <link rel="manifest" href="manifest.json">
         <link rel="shortcut icon" href="favicon.ico">
-        <title>Shane Exterkamp</title>
-
-        <!-- styles -->
-        <link rel="stylesheet" href="styles/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <title>Extra-Camp</title>
+        <link rel="apple-touch-icon" href="static/img/headshot_dithered.png">
+        <style>
+            body {
+                margin: 0;
+                color: #252525;
+                background: linear-gradient(90deg, rgb(255, 240, 240) 0%, rgb(255, 231, 231) 25%, rgb(255, 251, 242) 100%);
+            }
+            main {
+                background-color: white;
+                max-width: 45rem;
+                min-width: 300px;
+                margin: auto;
+                font-family: 'Open Sans', sans-serif;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.05);
+            }
+            h1 {
+                margin-top: 0;
+                padding-top: 0.67em;
+            }
+            h2 {
+                padding-bottom: 0.415em;
+                border-bottom: 1px;
+                border-bottom-style: solid;
+                border-color: lightgray;
+            }
+            #portrait {
+                max-width: 75px;
+                max-height: 75px;
+            }
+            footer {
+                text-align: right;
+            }
+            a {
+                text-decoration: none;
+                color: #6c6cc1;
+            }
+            li:not(:first-child) {
+                margin-top: 10px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            #title-break {
+                display: none;
+            }
+            .highlight {
+                position: relative;
+                z-index: 0;
+            }
+            .highlight:after {
+                content: "";
+                display: inline-block;
+                width: 104%;
+                height: 40%;
+                margin-right: 5px;
+                background: rgb(255, 231, 231);
+                position: absolute;
+                left: -2%;
+                bottom: 0;
+                z-index: -1;
+            }
+            @media only screen and (max-width:600px) {
+                 /* Title doesn't break correctly, since the IPA isn't a "word".  */
+                #title-break {
+                    display: inline;
+                }
+            }
+        </style>
     </head>
     <body>
-        <main style="text-align: center;">
-            <img id="portrait" alt="dithered portrait" src="static/img/headshot_dithered_transparent.png">
-            <div class="hero-text">
-                <div class="hero-name">
-                    Shane Exterkamp
-                </div>
-            </div>
-            <div >
-                <p class="history-text">
-                    <span style="display: inline-block;"><span class="goog-blue bold">G</span><span class="goog-red bold">o</span><span class="goog-yellow bold">o</span><span class="goog-blue bold">g</span><span class="goog-green bold">l</span><span class="goog-red bold">e</span></span> engineer & <span style="display: inline-block;"><span class="uf-orange bold">U</span><span class="uf-blue bold">F</span></span> Alumni
+        <main>
+            <div style="padding: 0 2rem">
+                <h1>
+                    Exterkamp<br id="title-break">
+                    <span class="highlight">
+                        (100's edition)
+                    </span>
+                </h1>
+                <h2>Who am I?</h2>
+                <p>
+                    I'm a software engineer in Northern California.
+                </p>
+                <p>
+                    My online prescence: 
+                    <a href=https://github.com/exterkamp>Github</a>,
+                    <a href=https://www.linkedin.com/in/shane-exterkamp>Linkedin</a>,
+                    <a href=http://facebook.com/shane.exterkamp>Facebook</a>,
+                    <a href=https://twitter.com/Shane_Exterkamp>Twitter</a>,
+                    <a href=https://www.instagram.com/exterkamps_>Instagram</a>
                 </p>
             </div>
-            <div>
-                <a class="icon" target="_blank" rel="noopener noreferrer" href="mailto:shane@exterkamp.codes"><img src="static/svg/baseline-alternate_email-24px.svg" alt="email link"></a>
-                <a class="icon" target="_target" href="static/resume.pdf"><img src="static/svg/baseline-picture_as_pdf-24px.svg" alt="resume link"></a>
-                <a class="icon icon-left-border" target="_blank" rel="noopener noreferrer" href="https://github.com/exterkamp"><img src="static/svg/github-icon-1.svg" alt="github link"></a>
-                <a class="icon" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shane-exterkamp"><img src="static/svg/linkedin-icon-1.svg" alt="linkedin link"></a>
-                <a class="icon" target="_blank" rel="noopener noreferrer" href="http://facebook.com/shane.exterkamp"><img src="static/svg/facebook-icon-1.svg" alt="facebook link"></a>
+            <div style="padding: 0 2rem">
+                <h2>What do I do?</h2>
+                <p>
+                    I work at Google<!--TODO(exterkamp): make a stock ticker -->, on Chrome, 
+                    focusing on web performance with <a href=https://github.com/GoogleChrome/lighthouse>Lighthouse</a>
+                    and <a href="https://developers.google.com/speed/pagespeed/insights/">Pagespeed Insights</a>.
+                </p>
+                <h2>(Questionably) Useful Sites</h2>
+                <p>
+                    <a href=https://benchmark.exterkamp.codes>Lighthouse UltraDumb&reg; benchmark tester.</a>
+                </p>
+                <p>
+                    <a href=https://100.exterkamp.codes>Lighthouse 100/100 score example site.</a>
+                </p>
+                <p>
+                    <a href=https://encode.exterkamp.codes>Text encoding tool.</a>
+                </p>
+                <h2>Things I've Made/Done</h2>
+                <h3>Code</h3>
+                <ul>
+                    <li><a href=https://github.com/exterkamp/keyboard_firmware>Custom Keyboards and Firmware</a></li>
+                    <li><a href=https://github.com/exterkamp/Python-Data-Structures>Lo-Fi Python Data Structures to chill and relax to</a></li>
+                    <li><a href=https://github.com/AstroTeam/Astro>Astro, a roguelike in space</a></li>
+                </ul>
+                <!-- TODO(exterkamp): make an infinite music scroll -->
+                <footer style="padding-bottom:2rem">✌️&nbsp;<i>2019</i></footer>
             </div>
-            <div id="spotify-header"></div>
-            <div id="spotify-container" style="display:flex;justify-content:center;"></div>
-            <div id="spotify-footer"></div>
         </main>
-        <footer>
-            <p>
-                Handcrafted artisanal &#60;/HTML&#62; just for you.
-            </p>
-        </footer>
-        <template id="spotify-track">
-            <div class="spotify-track">
-                <div class="album-hover-target" style="position: relative;width: 150px;height: 150px;">
-                    <div class="spotify-album-paper">
-                        <div class="spotify-song" style="margin-top:45px;"></div>
-                        <div class="spotify-album"></div>
-                        <div class="spotify-artist"></div>
-                    </div>
-                    <a class="spotify-link" target="_blank" rel="noopener noreferrer">
-                        Play on Spotify<img src="static/svg/Spotify_logo_without_text.svg" alt="spotify link"  style="position: absolute;right: 0;">
-                    </a>
-                    <img class="spotify-album-img" />
-                </div>
-                
-            </div>
-        </template>
-    <script>
-        // Check that service workers are registered
-        if ('serviceWorker' in navigator) {
-            // Use the window load event to keep the page load performant
-            window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js');
-            });
-        }
-    </script>
+        <script>
+            // Check that service workers are registered
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+                });
+            }
+        </script>
     </body>
 </html>

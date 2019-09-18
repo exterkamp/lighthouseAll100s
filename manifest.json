@@ -1,7 +1,7 @@
 {
-  "short_name": "Shane's Site",
-  "name": "Shane Exterkamp's homepage!",
-  "description":"Shane Exterkamp's homepage, with some fun info about him!  Feel free to look around.",
+  "short_name": "S. Exterkamp",
+  "name": "Shane Exterkamp's homepage.",
+  "description":"Shane Exterkamp's personal website.",
   "dir": "ltr",
   "lang": "en-US",
   "orientation": "portrait-primary",
@@ -12,13 +12,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "static/img/shane_icon.png",
+      "src": "static/img/headshot_dithered.png",
       "sizes": "192x192 512x512",
       "type": "image/png"
     }
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#edf1f3",
-  "background_color": "#edf1f3"
+  "theme_color": "#f9f9ff",
+  "background_color": "#f9f9ff"
 }

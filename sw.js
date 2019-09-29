@@ -4,9 +4,8 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox
 
 // Precaching html, basic css, and portrait.
 workbox.precaching.precacheAndRoute([
-    '/styles/index.css',
-    '/static/img/headshot_dithered_transparent.png',
-    { url: '/index.html'},
+    { url: '/styles/index.css', revision: 2},
+    { url: '/index.html', revision: 2},
 ]);
 
 workbox.routing.registerRoute(

@@ -1,73 +1,47 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <!-- Some structured data about Person: Shane Exterkamp -->
-        <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Person",
-            "name": "Shane Exterkamp",
-            "description": "American software engineer.",
-            "jobTitle": "Software Engineer",
-            "birthDate": "1994-03-21",
-            "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "University of Florida"
-            },
-            "url": "https://exterkamp.codes",
-            "sameAs": [
-            "https://www.facebook.com/shane.exterkamp",
-            "https://github.com/exterkamp",
-            "https://www.linkedin.com/in/shane-exterkamp/"
-            ]
-        }
-        </script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="theme-color" content="#edf1f3">
-        <meta name="Description" content="The homepage of Shane Exterkamp.">
+        <meta name="theme-color" content="#088646">
+        <meta name="Description" content="A little example site for getting 100 in Lighthouse.">
         <link rel="manifest" href="manifest.json">
         <link rel="shortcut icon" href="favicon.ico">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <title>Extra-Camp</title>
+        <title>💯</title>
         <link rel="apple-touch-icon" href="static/img/headshot_dithered.png">
         <style>
             body {
+                --color-green: #068846;
                 margin: 0;
                 color: #252525;
-                background: linear-gradient(90deg, rgb(255, 240, 240) 0%, rgb(255, 231, 231) 25%, rgb(255, 251, 242) 100%);
+                background: linear-gradient(60deg, rgb(255, 255, 255) 0%, rgb(230, 255, 233) 25%, rgb(250, 255, 251) 100%);
+                height: 100vh;
+                width: 100vw;
+            }
+            .main-card {
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.05);
             }
             main {
-                background-color: white;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 100%;
+                
                 max-width: 45rem;
                 min-width: 300px;
                 margin: auto;
                 font-family: 'Open Sans', sans-serif;
-                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.05);
+                
             }
             h1 {
                 margin-top: 0;
                 padding-top: 0.67em;
             }
-            h2 {
-                padding-bottom: 0.415em;
-                border-bottom: 1px;
-                border-bottom-style: solid;
-                border-color: lightgray;
-            }
-            #portrait {
-                max-width: 75px;
-                max-height: 75px;
-            }
-            footer {
-                text-align: right;
-            }
             a {
                 text-decoration: none;
-                color: #6c6cc1;
-            }
-            li:not(:first-child) {
-                margin-top: 10px;
+                color: var(--color-green);
             }
             a:hover {
                 text-decoration: underline;
@@ -85,7 +59,7 @@
                 width: 104%;
                 height: 40%;
                 margin-right: 5px;
-                background: rgb(255, 231, 231);
+                background:  #d4f3e3;
                 position: absolute;
                 left: -2%;
                 bottom: 0;
@@ -101,52 +75,19 @@
     </head>
     <body>
         <main>
-            <div style="padding: 0 2rem">
+            <div class="main-card" style="padding: 2rem;text-align: center;">
                 <h1>
-                    Exterkamp<br id="title-break">
+                    exterkamp.codes<br id="title-break">
                     <span class="highlight">
-                        (100's edition)
+                        (<span style="color: var(--color-green)">100</span>'s edition)
                     </span>
                 </h1>
-                <h2>Who am I?</h2>
                 <p>
-                    I'm a software engineer in Northern California.
+                    This is a site that scores <b style="color: var(--color-green)">100</b> in Lighthouse to use in examples.
                 </p>
-                <p>
-                    My online prescence: 
-                    <a href=https://github.com/exterkamp>Github</a>,
-                    <a href=https://www.linkedin.com/in/shane-exterkamp>Linkedin</a>,
-                    <a href=http://facebook.com/shane.exterkamp>Facebook</a>,
-                    <a href=https://twitter.com/Shane_Exterkamp>Twitter</a>,
-                    <a href=https://www.instagram.com/exterkamps_>Instagram</a>
+                <p style="font-size: 10px;">
+                    Doesn't score <b style="color: var(--color-green)">100</b>? File an issue <a href="https://github.com/exterkamp/lighthouseAll100s/issues">in the repo</a>.
                 </p>
-            </div>
-            <div style="padding: 0 2rem">
-                <h2>What do I do?</h2>
-                <p>
-                    I work at Google<!--TODO(exterkamp): make a stock ticker -->, on Chrome, 
-                    focusing on web performance with <a href=https://github.com/GoogleChrome/lighthouse>Lighthouse</a>
-                    and <a href="https://developers.google.com/speed/pagespeed/insights/">Pagespeed Insights</a>.
-                </p>
-                <h2>(Questionably) Useful Sites</h2>
-                <p>
-                    <a href=https://benchmark.exterkamp.codes>Lighthouse UltraDumb&reg; benchmark tester.</a>
-                </p>
-                <p>
-                    <a href=https://exterkamp.codes>Regular exterkamp dot codes.</a>
-                </p>
-                <p>
-                    <a href=https://encode.exterkamp.codes>Text encoding tool.</a>
-                </p>
-                <h2>Things I've Made/Done</h2>
-                <h3>Code</h3>
-                <ul>
-                    <li><a href=https://github.com/exterkamp/keyboard_firmware>Custom Keyboards and Firmware</a></li>
-                    <li><a href=https://github.com/exterkamp/Python-Data-Structures>Lo-Fi Python Data Structures to chill and relax to</a></li>
-                    <li><a href=https://github.com/AstroTeam/Astro>Astro, a roguelike in space</a></li>
-                </ul>
-                <!-- TODO(exterkamp): make an infinite music scroll -->
-                <footer style="padding-bottom:2rem">✌️&nbsp;<i>2019</i></footer>
             </div>
         </main>
         <script>

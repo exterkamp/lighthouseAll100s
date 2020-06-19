@@ -1,11 +1,10 @@
-let nonce = 1;
+let nonce = 2;
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js');
 
 // Precaching html, basic css, and portrait.
 workbox.precaching.precacheAndRoute([
-    { url: '/styles/index.css', revision: 2},
-    { url: '/index.html', revision: 2},
+    { url: '/index.html', revision: 3},
 ]);
 
 workbox.routing.registerRoute(
